@@ -1,5 +1,527 @@
 const questions = [
   {
+    question: "What does the abbreviation 'ACS' stand for in research terminology?",
+    options: [
+      "American Chemical Society",
+      "American Citation Style",
+      "Academic Citation Standard",
+      "Association of Chemical Scientists"
+    ],
+    answer: 0
+  },
+  {
+    question: "In APA format, how should you join the surnames of multiple authors in parenthetic materials?",
+    options: [
+      "Use ampersand (&)",
+      "Use 'and'",
+      "Use a comma",
+      "Use a semicolon"
+    ],
+    answer: 0
+  },
+  {
+    question: "What does 'ASA' stand for in research terminology?",
+    options: [
+      "American Sociological Association",
+      "Academic Standards Association",
+      "American Statistical Association",
+      "Association of Scientific Authors"
+    ],
+    answer: 0
+  },
+  {
+    question: "According to APA guidelines, how should you cite a work with more than two authors after the first citation?",
+    options: [
+      "Use only the first author followed by 'et al.'",
+      "List all authors each time",
+      "Use only the last author",
+      "Use 'and colleagues'"
+    ],
+    answer: 0
+  },
+  {
+    question: "What does 'CBE' stand for?",
+    options: [
+      "Council of Biology Editors",
+      "Committee of Biomedical Education",
+      "Council of Business Ethics",
+      "Conference of Basic Education"
+    ],
+    answer: 0
+  },
+  {
+    question: "In APA reference list, how should authors' names be formatted?",
+    options: [
+      "Last name followed by initials",
+      "First name followed by last name",
+      "Full names as they appear in publication",
+      "Last name only"
+    ],
+    answer: 0
+  },
+  {
+    question: "What is the correct APA format for a book reference?",
+    options: [
+      "Author, A. A. (Year). Title of work. Publisher Name.",
+      "Author, A. A. Title of work. (Year). Publisher Name.",
+      "Title of work. (Year). Author, A. A. Publisher Name.",
+      "Publisher Name. (Year). Title of work. Author, A. A."
+    ],
+    answer: 0
+  },
+  {
+    question: "What does 'CMS' stand for?",
+    options: [
+      "Chicago Manual Style",
+      "Citation Management System",
+      "Content Management Style",
+      "Chicago Manuscript Standard"
+    ],
+    answer: 0
+  },
+  {
+    question: "In APA style, how should you reference a work with no author?",
+    options: [
+      "Use the first few words of the title",
+      "Use 'Anonymous' as author",
+      "Skip the author field",
+      "Use the publisher as author"
+    ],
+    answer: 0
+  },
+  {
+    question: "What does 'CSE' stand for?",
+    options: [
+      "Council of Science Editors",
+      "Committee of Scientific Excellence",
+      "Council of Scientific Education",
+      "Conference of Science Educators"
+    ],
+    answer: 0
+  },
+  {
+    question: "In APA style, how should you format a direct quotation of more than 40 words?",
+    options: [
+      "Indent it as a block quotation without quotation marks",
+      "Place it in quotation marks within the paragraph",
+      "Italicize the quotation",
+      "Use a different font size"
+    ],
+    answer: 0
+  },
+  {
+    question: "What does 'IEEE' stand for?",
+    options: [
+      "Institute of Electrical and Electronics Engineering",
+      "International Electrical Engineering Exchange",
+      "Institute of Electronic Equipment Engineers",
+      "International Engineering Education Exchange"
+    ],
+    answer: 0
+  },
+  {
+    question: "In APA style, how should you reference a journal article?",
+    options: [
+      "Author, A. A. (Year). Article title. Journal Title, Volume(Issue), pages.",
+      "Author, A. A. Article title. (Year). Journal Title, Volume(Issue), pages.",
+      "Article title. (Year). Author, A. A. Journal Title, Volume(Issue), pages.",
+      "Journal Title. (Year). Volume(Issue), pages. Author, A. A."
+    ],
+    answer: 0
+  },
+  {
+    question: "What does 'MLA' stand for?",
+    options: [
+      "Modern Languages Association",
+      "Modern Literary Association",
+      "Multilingual Language Association",
+      "Modern Linguistics Association"
+    ],
+    answer: 0
+  },
+  {
+    question: "In APA style, how should you format the title of a book in the reference list?",
+    options: [
+      "Italicized with title case capitalization",
+      "Italicized with only the first word capitalized",
+      "In quotation marks with title case capitalization",
+      "Regular font with sentence case capitalization"
+    ],
+    answer: 0
+  },
+  {
+    question: "What does 'OWL' stand for in academic writing?",
+    options: [
+      "Online Writing Lab",
+      "Official Writing Laboratory",
+      "Online Writing Library",
+      "Official Writing Language"
+    ],
+    answer: 0
+  },
+  {
+    question: "In APA style, how should you reference a source with three to five authors for the first time?",
+    options: [
+      "List all authors",
+      "Use only the first author followed by 'et al.'",
+      "Use only the last author",
+      "Use the first and last author only"
+    ],
+    answer: 0
+  },
+  {
+    question: "What is the purpose of a DOI in APA referencing?",
+    options: [
+      "To provide a permanent link to digital content",
+      "To identify the editor of a publication",
+      "To indicate the date of publication",
+      "To show the number of pages in a work"
+    ],
+    answer: 0
+  },
+  {
+    question: "In APA style, how should you format a reference when the author is an organization?",
+    options: [
+      "Spell out the full organization name",
+      "Use the organization's acronym only",
+      "Use 'Anonymous' as author",
+      "Omit the author field"
+    ],
+    answer: 0
+  },
+  {
+    question: "What is the correct order for multiple works by the same author in APA references?",
+    options: [
+      "Chronologically by publication year",
+      "Alphabetically by title",
+      "By relevance to your paper",
+      "By publisher name"
+    ],
+    answer: 0
+  },
+  {
+    question: "How should you format the title of a journal article in APA references?",
+    options: [
+      "In quotation marks with sentence case capitalization",
+      "Italicized with title case capitalization",
+      "Regular font with title case capitalization",
+      "Italicized with sentence case capitalization"
+    ],
+    answer: 0
+  },
+  {
+    question: "What does the abbreviation 'Ibid' mean?",
+    options: [
+      "Same place",
+      "Different place",
+      "In the same work",
+      "As previously cited"
+    ],
+    answer: 0
+  },
+  {
+    question: "In APA style, how should you reference a source with six or more authors?",
+    options: [
+      "List the first author followed by 'et al.'",
+      "List all authors",
+      "List the first six authors followed by 'et al.'",
+      "Use only the last author"
+    ],
+    answer: 0
+  },
+  {
+    question: "What is the correct format for page numbers in APA journal article references?",
+    options: [
+      "105-120",
+      "pp. 105-120",
+      "p. 105-120",
+      "pages 105-120"
+    ],
+    answer: 0
+  },
+  {
+    question: "How should you reference a personal communication in APA style?",
+    options: [
+      "Only cite it in-text, not in references",
+      "Include it in the reference list",
+      "List it under 'Personal Communications' in references",
+      "Include it in footnotes only"
+    ],
+    answer: 0
+  },
+  {
+    question: "What does 'Op cit' mean in classic citation style?",
+    options: [
+      "In the work cited",
+      "Same place",
+      "As above",
+      "Operative citation"
+    ],
+    answer: 0
+  },
+  {
+    question: "In APA style, how should you format a reference to a website?",
+    options: [
+      "Author, A. A. (Year). Title of page. Site Name. URL",
+      "Title of page. (Year). Author, A. A. Site Name. URL",
+      "Site Name. (Year). Title of page. Author, A. A. URL",
+      "Author, A. A. Title of page. (Year). URL"
+    ],
+    answer: 0
+  },
+  {
+    question: "What is the purpose of the 'et al.' abbreviation?",
+    options: [
+      "To shorten citations with multiple authors",
+      "To indicate multiple publishers",
+      "To reference multiple works by the same author",
+      "To indicate edition information"
+    ],
+    answer: 0
+  },
+  {
+    question: "In APA style, how should you reference a chapter in an edited book?",
+    options: [
+      "Author, A. A. (Year). Chapter title. In E. E. Editor (Ed.), Book title (pp. xx-xx). Publisher.",
+      "Author, A. A. Chapter title. (Year). In E. E. Editor (Ed.), Book title (pp. xx-xx). Publisher.",
+      "Editor, E. E. (Ed.). (Year). Book title. Author, A. A. Chapter title (pp. xx-xx). Publisher.",
+      "Chapter title. (Year). Author, A. A. In E. E. Editor (Ed.), Book title (pp. xx-xx). Publisher."
+    ],
+    answer: 0
+  },
+  {
+    question: "What does 'Loc cit' mean in classic citation style?",
+    options: [
+      "Same place",
+      "Different place",
+      "Location cited",
+      "Local citation"
+    ],
+    answer: 0
+  },
+  {
+    question: "In APA style, how should you format the publication year for a work with no date?",
+    options: [
+      "Use 'n.d.'",
+      "Use the current year",
+      "Omit the year",
+      "Use the copyright year"
+    ],
+    answer: 0
+  },
+  {
+    question: "What is the correct way to cite multiple works in the same parentheses in APA style?",
+    options: [
+      "List them in alphabetical order by author, separated by semicolons",
+      "List them in chronological order",
+      "List them in order of importance",
+      "List them in the order they appear in the text"
+    ],
+    answer: 0
+  },
+  {
+    question: "How should you reference a newspaper article in APA style?",
+    options: [
+      "Author, A. A. (Year, Month Day). Article title. Newspaper Title, page(s).",
+      "Author, A. A. Article title. (Year, Month Day). Newspaper Title, page(s).",
+      "Newspaper Title. (Year, Month Day). Article title. Author, A. A., page(s).",
+      "Article title. (Year, Month Day). Author, A. A. Newspaper Title, page(s)."
+    ],
+    answer: 0
+  },
+  {
+    question: "What is the purpose of interpolation in quotations?",
+    options: [
+      "To add comments or clarification in brackets",
+      "To indicate omitted text with ellipses",
+      "To change the meaning of the original text",
+      "To translate foreign language quotations"
+    ],
+    answer: 0
+  },
+  {
+    question: "In APA style, how should you reference a government report?",
+    options: [
+      "Government Agency. (Year). Report title (Report No. xxx). Publisher.",
+      "Report title. (Year). Government Agency (Report No. xxx). Publisher.",
+      "Government Agency. Report title. (Year) (Report No. xxx). Publisher.",
+      "(Year). Government Agency. Report title (Report No. xxx). Publisher."
+    ],
+    answer: 0
+  },
+  {
+    question: "What does the abbreviation 'nd' stand for in APA references?",
+    options: [
+      "Not dated",
+      "No data",
+      "Not determined",
+      "Not defined"
+    ],
+    answer: 0
+  },
+  {
+    question: "In APA style, how should you reference a source that is in press?",
+    options: [
+      "Use 'in press' in place of the year",
+      "Use the expected publication year",
+      "Use the current year",
+      "Omit the year field"
+    ],
+    answer: 0
+  },
+  {
+    question: "What is the correct way to cite a secondary source in APA style?",
+    options: [
+      "Mention the original work and cite the secondary source",
+      "Cite both the original and secondary source in-text",
+      "Cite only the secondary source in-text and references",
+      "Use 'as cited in' followed by the secondary source"
+    ],
+    answer: 0
+  },
+  {
+    question: "How should you format electronic sources in APA references?",
+    options: [
+      "Include the URL or DOI at the end of the reference",
+      "Include the access date instead of the URL",
+      "Put the URL in parentheses after the title",
+      "List electronic sources separately from print sources"
+    ],
+    answer: 0
+  },
+  {
+    question: "What is the purpose of the 'References' section in APA style?",
+    options: [
+      "To list only sources cited in the text",
+      "To list all sources consulted during research",
+      "To provide additional reading suggestions",
+      "To list sources that influenced your thinking but weren't cited"
+    ],
+    answer: 0
+  },
+  {
+    question: "In APA style, how should you format authors with the same surname?",
+    options: [
+      "Use initials before the surnames",
+      "Use full first names to distinguish them",
+      "List them chronologically by publication date",
+      "Combine them under one entry with multiple years"
+    ],
+    answer: 0
+  },
+  {
+    question: "What is the difference between 'References' and 'Bibliography'?",
+    options: [
+      "References include only cited works, Bibliography includes all sources consulted",
+      "References include all sources, Bibliography includes only cited works",
+      "They are identical and can be used interchangeably",
+      "References are for books, Bibliography is for articles"
+    ],
+    answer: 0
+  },
+  {
+    question: "In APA style, how should you reference a conference proceeding?",
+    options: [
+      "Author, A. A. (Year). Paper title. In Proceedings Title (pp. xx-xx). Publisher.",
+      "Author, A. A. Paper title. (Year). In Proceedings Title (pp. xx-xx). Publisher.",
+      "Proceedings Title. (Year). Paper title. Author, A. A. (pp. xx-xx). Publisher.",
+      "Paper title. (Year). Author, A. A. In Proceedings Title (pp. xx-xx). Publisher."
+    ],
+    answer: 0
+  },
+  {
+    question: "What is the correct way to cite a direct quotation in APA style?",
+    options: [
+      "(Author, year, p. xx)",
+      "Author, year, p. xx",
+      "Author (year, p. xx)",
+      "Author (year), p. xx"
+    ],
+    answer: 0
+  },
+  {
+    question: "In APA style, how should you reference a source with a corporate author?",
+    options: [
+      "Use the corporate name as author",
+      "Use 'Anonymous' as author",
+      "List the CEO or director as author",
+      "Omit the author field and start with title"
+    ],
+    answer: 0
+  },
+  {
+    question: "What is the purpose of the hanging indent in APA references?",
+    options: [
+      "To make the references visually distinctive",
+      "To save space on the page",
+      "To follow traditional publishing standards",
+      "To make author names stand out"
+    ],
+    answer: 0
+  },
+  {
+    question: "In APA style, how should you reference a multivolume work?",
+    options: [
+      "Author, A. A. (Year). Title of work (Vol. x). Publisher.",
+      "Author, A. A. Title of work. (Year) (Vol. x). Publisher.",
+      "Title of work. (Year). Author, A. A. (Vol. x). Publisher.",
+      "Publisher. (Year). Title of work (Vol. x). Author, A. A."
+    ],
+    answer: 0
+  },
+  {
+    question: "What does the abbreviation 'p.' stand for in APA citations?",
+    options: [
+      "Page",
+      "Paragraph",
+      "Publication",
+      "Part"
+    ],
+    answer: 0
+  },
+  {
+    question: "In APA style, how should you reference a source with no page numbers?",
+    options: [
+      "Use paragraph numbers (para. xx), section headings, or chapter numbers",
+      "Use paragraph numbers only",
+      "Use section headings only",
+      "Omit the page number field"
+    ],
+    answer: 0
+  },
+  {
+    question: "What is the correct way to format a DOI in APA references?",
+    options: [
+      "https://doi.org/xxxx",
+      "doi:xxxx",
+      "DOI: xxxx",
+      "Any of the above is acceptable"
+    ],
+    answer: 0
+  },
+  {
+    question: "In APA style, how should you reference a translated work?",
+    options: [
+      "Author, A. A. (Year). Title (T. Translator, Trans.). Publisher. (Original work published year)",
+      "Author, A. A. Title. (Year). (T. Translator, Trans.). Publisher. (Original work published year)",
+      "Translator, T. (Trans.). (Year). Title. Author, A. A. Publisher. (Original work published year)",
+      "Title. (Year). Author, A. A. (T. Translator, Trans.). Publisher. (Original work published year)"
+    ],
+    answer: 0
+  },
+  {
+    question: "What is the purpose of the 'Retrieved from' phrase in APA electronic references?",
+    options: [
+      "To provide the URL where the source was found",
+      "To indicate when the source was accessed",
+      "To credit the website host",
+      "To distinguish online from print sources"
+    ],
+    answer: 0
+  },
+  // Additional questions can be added here to reach 150
+
+  {
     question: "The technical term for academic dishonesty is known as:",
     options: [
       "Citation",
@@ -1435,261 +1957,426 @@ const questions = [
   }
 ];
 
-// UI Elements
-const questionNav = document.getElementById('question-nav');
-const startScreen = document.getElementById('start-screen');
-const startQuizBtn = document.getElementById('start-quiz-btn');
-const quizContainer = document.getElementById('quiz-container');
-const resultContainer = document.getElementById('result-container');
-const app = document.getElementById('app');
-const timerEl = document.getElementById('timer');
-const questionNumberEl = document.getElementById('question-number');
-const questionTextEl = document.getElementById('question-text');
-const optionsContainer = document.getElementById('options-container');
-const prevBtn = document.getElementById('prev-btn');
-const nextBtn = document.getElementById('next-btn');
-const submitBtn = document.getElementById('submit-btn');
-const scoreEl = document.getElementById('score');
-const resultsList = document.getElementById('results-list');
-const retryBtn = document.getElementById('retry-btn');
-const customConfirm = document.getElementById('customConfirm');
-const confirmYes = document.getElementById('confirmYes');
-const confirmNo = document.getElementById('confirmNo');
-const darkModeToggle = document.getElementById('dark-mode-toggle');
+  // KaTeX rendering function
+  function renderLatex(str) {
+    if (!str) return str;
 
-// Quiz variables
-const TOTAL_QUESTIONS = 45;
-const TIME_LIMIT = 45 * 60; // in seconds
-let selectedQuestions = [];
-let currentQuestionIndex = 0;
-let userAnswers = [];
-let timer;
-let timeRemaining = TIME_LIMIT;
-
-// Initialize quiz
-startQuizBtn.addEventListener('click', () => {
-  startScreen.style.display = 'none';
-  app.style.display = 'flex';
-  initQuiz();
-});
-
-function initQuiz() {
-  // Shuffle and pick questions
-  const shuffled = shuffleArray([...questions]);
-  selectedQuestions = shuffled.slice(0, Math.min(TOTAL_QUESTIONS, questions.length));
-
-  currentQuestionIndex = 0;
-  userAnswers = new Array(selectedQuestions.length).fill(null);
-
-  timeRemaining = TIME_LIMIT;
-  updateTimerDisplay();
-
-  showQuestion();
-
-  prevBtn.disabled = true;
-  nextBtn.disabled = false;
-  submitBtn.disabled = true;
-
-  quizContainer.style.display = 'flex';
-  resultContainer.style.display = 'none';
-
-  startTimer();
-}
-
-function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
+    // Render LaTeX between $...$
+    return str.replace(/\$(.*?)\$/g, (match, latex) => {
+      try {
+        return katex.renderToString(latex, {
+          throwOnError: false,
+          displayMode: false
+        });
+      } catch (e) {
+        console.error("KaTeX error:", e);
+        return match;
+      }
+    });
   }
-  return array;
-}
 
-function startTimer() {
-  clearInterval(timer);
-  timer = setInterval(() => {
-    timeRemaining--;
+  // UI Elements
+  const questionNav = document.getElementById('question-nav');
+  const startScreen = document.getElementById('start-screen');
+  const startQuizBtn = document.getElementById('start-quiz-btn');
+  const quizContainer = document.getElementById('quiz-container');
+  const resultContainer = document.getElementById('result-container');
+  const app = document.getElementById('app');
+  const timerEl = document.getElementById('timer');
+  const questionNumberEl = document.getElementById('question-number');
+  const questionTextEl = document.getElementById('question-text');
+  const optionsContainer = document.getElementById('options-container');
+  const prevBtn = document.getElementById('prev-btn');
+  const nextBtn = document.getElementById('next-btn');
+  const submitBtn = document.getElementById('submit-btn');
+  const scoreEl = document.getElementById('score');
+  const resultsList = document.getElementById('results-list');
+  const retryBtn = document.getElementById('retry-btn');
+  const customConfirm = document.getElementById('customConfirm');
+  const confirmYes = document.getElementById('confirmYes');
+  const confirmNo = document.getElementById('confirmNo');
+  const reloadConfirm = document.getElementById('reload-confirm');
+  const reloadSubmit = document.getElementById('reload-submit');
+  const reloadCancel = document.getElementById('reload-cancel');
+
+  // Question count elements
+  const questionCountInput = document.getElementById('question-count');
+  const countSlider = document.getElementById('count-slider');
+  const decreaseBtn = document.getElementById('decrease-btn');
+  const increaseBtn = document.getElementById('increase-btn');
+  const countDisplay = document.getElementById('count-display');
+  const timeEstimate = document.getElementById('time-estimate');
+
+  // Quiz variables
+  let TOTAL_QUESTIONS = 10; // Default value
+  let timeRemaining; // Will be set dynamically based on question count
+  let selectedQuestions = [];
+  let currentQuestionIndex = 0;
+  let userAnswers = [];
+  let timer;
+  let quizInProgress = false;
+
+  // Update question count display
+  function updateCountDisplay() {
+    countDisplay.textContent = `${TOTAL_QUESTIONS} questions`;
+    questionCountInput.value = TOTAL_QUESTIONS;
+    countSlider.value = TOTAL_QUESTIONS;
+    // Show estimated time as 45 seconds per question
+    const totalSeconds = TOTAL_QUESTIONS * 45;
+    const min = Math.floor(totalSeconds / 60);
+    const sec = totalSeconds % 60;
+    let timeStr = '';
+    if (min > 0) {
+      timeStr += `${min} minute${min !== 1 ? 's' : ''}`;
+      if (sec > 0) timeStr += ` ${sec} second${sec !== 1 ? 's' : ''}`;
+    } else {
+      timeStr = `${sec} second${sec !== 1 ? 's' : ''}`;
+    }
+    timeEstimate.textContent = `Estimated time: ${timeStr} (${TOTAL_QUESTIONS} × 38 sec)`;
+  }   
+
+  // Initialize question count controls
+  decreaseBtn.addEventListener('click', () => {
+    if (TOTAL_QUESTIONS > 10) {
+      TOTAL_QUESTIONS = Math.max(10, TOTAL_QUESTIONS - 5);
+      updateCountDisplay();
+    }
+  });
+
+  increaseBtn.addEventListener('click', () => {
+    if (TOTAL_QUESTIONS < 100) {
+      TOTAL_QUESTIONS = Math.min(100, TOTAL_QUESTIONS + 5);
+      updateCountDisplay();
+    }
+  });
+
+  questionCountInput.addEventListener('change', () => {
+    let value = parseInt(questionCountInput.value);
+    if (isNaN(value) || value < 10) value = 10;
+    if (value > 100) value = 100;
+    TOTAL_QUESTIONS = value;
+    updateCountDisplay();
+  });
+
+  countSlider.addEventListener('input', () => {
+    TOTAL_QUESTIONS = parseInt(countSlider.value);
+    updateCountDisplay();
+  });
+
+  // Initialize quiz
+  startQuizBtn.addEventListener('click', () => {
+    startScreen.style.display = 'none';
+    app.style.display = 'flex';
+    initQuiz();
+  });
+
+  function initQuiz() {
+    // Set time limit based on number of questions (45s per question)
+    timeRemaining = TOTAL_QUESTIONS * 45;
     updateTimerDisplay();
-    if (timeRemaining <= 0) {
-      clearInterval(timer);
-      finishQuiz();
+
+    // Shuffle and pick questions
+    const shuffled = shuffleArray([...questions]);
+    selectedQuestions = shuffled.slice(0, Math.min(TOTAL_QUESTIONS, questions.length));
+
+    currentQuestionIndex = 0;
+    userAnswers = new Array(selectedQuestions.length).fill(null);
+
+    showQuestion();
+
+    prevBtn.disabled = true;
+    nextBtn.disabled = false;
+    submitBtn.disabled = true;
+
+    quizContainer.style.display = 'flex';
+    resultContainer.style.display = 'none';
+
+    startTimer();
+    
+    quizInProgress = true;
+    window.addEventListener('beforeunload', handleBeforeUnload);
+    
+    // Focus on the quiz container for keyboard events
+    document.body.focus();
+  }
+
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
     }
-  }, 1000);
-}
+    return array;
+  }
 
-function updateTimerDisplay() {
-  let min = Math.floor(timeRemaining / 60);
-  let sec = timeRemaining % 60;
-  timerEl.textContent = `Time Left: ${min.toString().padStart(2,'0')}:${sec.toString().padStart(2,'0')}`;
-}
+  function startTimer() {
+    clearInterval(timer);
+    timer = setInterval(() => {
+      timeRemaining--;
+      updateTimerDisplay();
+      if (timeRemaining <= 0) {
+        clearInterval(timer);
+        finishQuiz();
+      }
+    }, 1000);
+  }
 
-function renderQuestionNav() {
-  questionNav.innerHTML = '';
-  selectedQuestions.forEach((_, i) => {
-    const btn = document.createElement('button');
-    btn.textContent = i + 1;
-    if (userAnswers[i] !== null) btn.classList.add('answered');
-    if (i === currentQuestionIndex) btn.classList.add('current');
-    btn.addEventListener('click', () => {
-      currentQuestionIndex = i;
+  function updateTimerDisplay() {
+    let min = Math.floor(timeRemaining / 60);
+    let sec = timeRemaining % 60;
+    timerEl.textContent = `Time Left: ${min.toString().padStart(2,'0')}:${sec.toString().padStart(2,'0')}`;
+  }
+
+  function renderQuestionNav() {
+    questionNav.innerHTML = '';
+    selectedQuestions.forEach((_, i) => {
+      const btn = document.createElement('button');
+      btn.textContent = i + 1;
+      if (userAnswers[i] !== null) btn.classList.add('answered');
+      if (i === currentQuestionIndex) btn.classList.add('current');
+      btn.addEventListener('click', () => {
+        currentQuestionIndex = i;
+        showQuestion();
+        renderQuestionNav();
+      });
+      questionNav.appendChild(btn);
+    });
+  }
+
+  function showQuestion() {
+    const q = selectedQuestions[currentQuestionIndex];
+    questionNumberEl.textContent = `Question ${currentQuestionIndex + 1} of ${selectedQuestions.length}`;
+    
+    // Render LaTeX in question
+    questionTextEl.innerHTML = renderLatex(q.question);
+
+    optionsContainer.innerHTML = '';
+
+    q.options.forEach((optionText, i) => {
+      const optionDiv = document.createElement('div');
+      optionDiv.className = 'option';
+      
+      const textSpan = document.createElement('span');
+      textSpan.innerHTML = renderLatex(String.fromCharCode(65 + i) + ". " + optionText);
+      optionDiv.appendChild(textSpan);
+      
+      const keyBadge = document.createElement('div');
+      keyBadge.className = 'key-badge';
+      keyBadge.textContent = String.fromCharCode(65 + i);
+      optionDiv.appendChild(keyBadge);
+
+      if(userAnswers[currentQuestionIndex] === i) {
+        optionDiv.classList.add('selected');
+      }
+
+      optionDiv.addEventListener('click', () => {
+        selectOption(i);
+      });
+
+      optionsContainer.appendChild(optionDiv);
+    });
+
+    prevBtn.disabled = currentQuestionIndex === 0;
+    nextBtn.disabled = currentQuestionIndex === selectedQuestions.length - 1;
+    submitBtn.disabled = userAnswers[currentQuestionIndex] === null;
+
+    renderQuestionNav();
+  }
+
+  function selectOption(optionIndex) {
+    userAnswers[currentQuestionIndex] = optionIndex;
+    
+    Array.from(optionsContainer.children).forEach((optEl, idx) => {
+      optEl.classList.toggle('selected', idx === optionIndex);
+    });
+
+    submitBtn.disabled = false;
+    renderQuestionNav();
+  }
+
+  // Navigation buttons
+  prevBtn.addEventListener('click', () => {
+    if(currentQuestionIndex > 0) {
+      currentQuestionIndex--;
       showQuestion();
-      renderQuestionNav();
-    });
-    questionNav.appendChild(btn);
-  });
-}
-
-function showQuestion() {
-  const q = selectedQuestions[currentQuestionIndex];
-  questionNumberEl.textContent = `Question ${currentQuestionIndex + 1} of ${selectedQuestions.length}`;
-  questionTextEl.textContent = q.question;
-
-  optionsContainer.innerHTML = '';
-
-  q.options.forEach((optionText, i) => {
-    const optionDiv = document.createElement('div');
-    optionDiv.className = 'option';
-    optionDiv.textContent = String.fromCharCode(65 + i) + ". " + optionText;
-    
-    // Add keyboard shortcut badge
-    const keyBadge = document.createElement('div');
-    keyBadge.className = 'key-badge';
-    keyBadge.textContent = String.fromCharCode(65 + i);
-    optionDiv.appendChild(keyBadge);
-
-    if(userAnswers[currentQuestionIndex] === i) {
-      optionDiv.classList.add('selected');
     }
-
-    optionDiv.addEventListener('click', () => {
-      selectOption(i);
-    });
-
-    optionsContainer.appendChild(optionDiv);
   });
 
-  prevBtn.disabled = currentQuestionIndex === 0;
-  nextBtn.disabled = currentQuestionIndex === selectedQuestions.length - 1;
-  submitBtn.disabled = userAnswers[currentQuestionIndex] === null;
-
-  renderQuestionNav();
-}
-
-function selectOption(optionIndex) {
-  userAnswers[currentQuestionIndex] = optionIndex;
-  
-  Array.from(optionsContainer.children).forEach((optEl, idx) => {
-    optEl.classList.toggle('selected', idx === optionIndex);
+  nextBtn.addEventListener('click', () => {
+    if(currentQuestionIndex < selectedQuestions.length - 1) {
+      currentQuestionIndex++;
+      showQuestion();
+    }
   });
 
-  submitBtn.disabled = false;
-  renderQuestionNav();
-}
-
-// Navigation buttons
-prevBtn.addEventListener('click', () => {
-  if(currentQuestionIndex > 0) {
-    currentQuestionIndex--;
-    showQuestion();
-  }
-});
-
-nextBtn.addEventListener('click', () => {
-  if(currentQuestionIndex < selectedQuestions.length - 1) {
-    currentQuestionIndex++;
-    showQuestion();
-  }
-});
-
-// Submit button shows custom confirmation dialog
-submitBtn.addEventListener('click', () => {
-  customConfirm.style.display = 'flex';
-});
-
-// Confirm dialog buttons
-confirmYes.addEventListener('click', () => {
-  customConfirm.style.display = 'none';
-  finishQuiz();
-});
-
-confirmNo.addEventListener('click', () => {
-  customConfirm.style.display = 'none';
-});
-
-function finishQuiz() {
-  clearInterval(timer);
-  quizContainer.style.display = 'none';
-  resultContainer.style.display = 'flex';
-
-  let correctCount = 0;
-  resultsList.innerHTML = '';
-
-  selectedQuestions.forEach((q, idx) => {
-    const userAnsIndex = userAnswers[idx];
-    const isCorrect = userAnsIndex === q.answer;
-    if (isCorrect) correctCount++;
-
-    const userAnswerText = userAnsIndex !== null ? q.options[userAnsIndex] : 'No Answer';
-    const correctAnswerText = q.options[q.answer];
-
-    const div = document.createElement('div');
-    div.className = 'result-question';
-    div.innerHTML = `
-      <div><strong>Q${idx + 1}:</strong> ${q.question}</div>
-      <div>Your answer: <span class="${isCorrect ? 'correct' : 'wrong'}">${userAnswerText}</span></div>
-      ${isCorrect ? '' : `<div>Correct answer: <span class="correct">${correctAnswerText}</span></div>`}
-    `;
-    resultsList.appendChild(div);
+  // Submit button shows custom confirmation dialog
+  submitBtn.addEventListener('click', () => {
+    customConfirm.style.display = 'flex';
   });
 
-  scoreEl.textContent = `You answered ${correctCount} out of ${selectedQuestions.length} questions correctly.`;
-  
-  // Add performance comment
-  let comment = "";
-  const percentage = Math.round((correctCount / selectedQuestions.length) * 100);
-  
-  if (percentage >= 80) comment = "Excellent work! You have a strong grasp of this material.";
-  else if (percentage >= 60) comment = "Good effort! Review the incorrect answers to improve.";
-  else comment = "Keep studying! Focus on the topics you missed.";
-  
-  scoreEl.innerHTML += `<div style="margin-top:10px;font-weight:normal">${comment}</div>`;
-}
+  // Confirm dialog buttons
+  confirmYes.addEventListener('click', () => {
+    customConfirm.style.display = 'none';
+    finishQuiz();
+  });
 
-retryBtn.addEventListener('click', () => {
-  initQuiz();
-});
+  confirmNo.addEventListener('click', () => {
+    customConfirm.style.display = 'none';
+  });
 
-// Dark Mode Toggle
-darkModeToggle.addEventListener('click', () => {
-  document.body.classList.toggle('dark-mode');
-  darkModeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
-});
-
-// Keyboard shortcuts
-document.addEventListener('keydown', function(e) {
-  // Ignore if focus is on input elements
-  if (['INPUT', 'TEXTAREA', 'BUTTON'].includes(document.activeElement.tagName)) {
-    return;
-  }
-  
-  const key = e.key.toUpperCase();
-  
-  // Option selection
-  if (key >= 'A' && key <= 'E') {
-    const optionIndex = key.charCodeAt(0) - 65;
-    const currentOptions = selectedQuestions[currentQuestionIndex]?.options || [];
-    
-    if (optionIndex < currentOptions.length) {
-      selectOption(optionIndex);
+  // Reload confirmation handlers
+  function handleBeforeUnload(e) {
+    if (quizInProgress) {
+      e.preventDefault();
+      e.returnValue = '';
+      reloadConfirm.style.display = 'flex';
+      return '';
     }
   }
-  
-  // Navigation
-  switch(key) {
-    case 'P':
-      if (!prevBtn.disabled) prevBtn.click();
-      break;
-    case 'N':
-      if (!nextBtn.disabled) nextBtn.click();
-      break;
+
+  reloadSubmit.addEventListener('click', () => {
+    reloadConfirm.style.display = 'none';
+    quizInProgress = false;
+    window.removeEventListener('beforeunload', handleBeforeUnload);
+    finishQuiz();
+    setTimeout(() => {
+      window.location.reload();
+    }, 1000);
+  });
+
+  reloadCancel.addEventListener('click', () => {
+    reloadConfirm.style.display = 'none';
+  });
+
+  function finishQuiz() {
+    clearInterval(timer);
+    quizContainer.style.display = 'none';
+    resultContainer.style.display = 'flex';
+    
+    quizInProgress = false;
+    window.removeEventListener('beforeunload', handleBeforeUnload);
+
+    let correctCount = 0;
+    resultsList.innerHTML = '';
+
+    selectedQuestions.forEach((q, idx) => {
+      const userAnsIndex = userAnswers[idx];
+      const isCorrect = userAnsIndex === q.answer;
+      if (isCorrect) correctCount++;
+
+      const userAnswerText = userAnsIndex !== null ? q.options[userAnsIndex] : 'No Answer';
+      const correctAnswerText = q.options[q.answer];
+
+      const div = document.createElement('div');
+      div.className = 'result-question';
+      div.innerHTML = `
+        <div><strong>Q${idx + 1}:</strong> ${renderLatex(q.question)}</div>
+        <div>Your answer: <span class="${isCorrect ? 'correct' : 'wrong'}">${renderLatex(userAnswerText)}</span></div>
+        ${isCorrect ? '' : `<div>Correct answer: <span class="correct">${renderLatex(correctAnswerText)}</span></div>`}
+      `;
+      resultsList.appendChild(div);
+    });
+
+    scoreEl.textContent = `You answered ${correctCount} out of ${selectedQuestions.length} questions correctly.`;
+    
+    let comment = "";
+    const percentage = Math.round((correctCount / selectedQuestions.length) * 100);
+    
+    if (percentage >= 80) comment = "Excellent work! You have a strong grasp of this material.";
+    else if (percentage >= 60) comment = "Good effort! Review the incorrect answers to improve.";
+    else comment = "Keep studying! Focus on the topics you missed.";
+    
+    scoreEl.innerHTML += `<div style="margin-top:10px;font-weight:normal">${comment}</div>`;
   }
-});
+
+  retryBtn.addEventListener('click', () => {
+    initQuiz();
+  });
+
+  // Toggle mobile menu
+  document.querySelector('.menu-toggle').addEventListener('click', function () {
+    document.querySelector('.nav-links').classList.toggle('show');
+  });
+
+  // Initialize count display when page loads
+  updateCountDisplay();
+
+  // Keyboard shortcuts - FIXED
+  document.addEventListener('keydown', function(e) {
+    // Don't process keyboard shortcuts if user is typing in an input
+    if (['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) return;
+    
+    const key = e.key.toUpperCase();
+    
+    // Handle keyboard shortcuts based on what's visible on screen
+    if (startScreen.style.display !== 'none') {
+      // Start screen is visible
+      if (key === 'ENTER') {
+        e.preventDefault();
+        startQuizBtn.click();
+      }
+      return;
+    }
+    
+    if (customConfirm.style.display === 'flex') {
+      // Custom confirmation dialog is visible
+      if (key === 'Y' || key === 'ENTER') {
+        e.preventDefault();
+        confirmYes.click();
+      } else if (key === 'N' || key === 'ESCAPE') {
+        e.preventDefault();
+        confirmNo.click();
+      }
+      return;
+    }
+    
+    if (reloadConfirm.style.display === 'flex') {
+      // Reload confirmation dialog is visible
+      if (key === 'ENTER') {
+        e.preventDefault();
+        reloadSubmit.click();
+      } else if (key === 'ESCAPE') {
+        e.preventDefault();
+        reloadCancel.click();
+      }
+      return;
+    }
+    
+    if (resultContainer.style.display === 'flex') {
+      // Results screen is visible
+      if (key === 'ENTER' || key === 'R') {
+        e.preventDefault();
+        retryBtn.click();
+      }
+      return;
+    }
+    
+    if (quizContainer.style.display === 'flex' && quizInProgress) {
+      // Quiz is in progress
+      // Option selection (A–E)
+      if (key >= 'A' && key <= 'E') {
+        const optionIndex = key.charCodeAt(0) - 65;
+        const currentOptions = selectedQuestions[currentQuestionIndex]?.options || [];
+        if (optionIndex < currentOptions.length) {
+          e.preventDefault();
+          selectOption(optionIndex);
+        }
+        return;
+      }
+
+      // Navigation
+      switch (key) {
+        case 'P':
+          e.preventDefault();
+          if (!prevBtn.disabled) prevBtn.click();
+          break;
+        case 'N':
+          e.preventDefault();
+          if (!nextBtn.disabled) nextBtn.click();
+          break;
+        case 'S':
+          e.preventDefault();
+          if (!submitBtn.disabled) submitBtn.click();
+          break;
+      }
+    }
+  });
